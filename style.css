@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-body{
+body {
   text-align: center;  
-  background-image: url("https://source.unsplash.com/OL3NXdEwfnI");
+  background-image: linear-gradient(to top, rgba(28, 28, 28, 0.3), rgba(257, 257, 257, 0.3)), url("https://source.unsplash.com/OL3NXdEwfnI");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +14,7 @@ body{
 
 h1 {
     text-align: center;
-    font-family: 'Bevan', cursive;
+    font-family: 'Major Mono Display', monospace;
     font-size: 70px;
     letter-spacing: 30px;
     background: #3B0ECF;
@@ -23,7 +24,9 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: default;
-    margin-bottom: 0;
+    margin: 50px auto 40px;
+    max-width: 480px;
+    width: 100%;
 }
 
 h1:hover {
@@ -35,30 +38,40 @@ h3 {
     line-height: 2;
     margin-left: 28%;
     margin-right: 28%;
-    font-family: 'Bevan', cursive;
+    font-family: 'Architects Daughter', cursive;
+    text-align: justify;
     letter-spacing: 3px;
-    font-size: 22px;
-    background: #F7FF14;
-    background: -webkit-radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
-    background: radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    color: lime;
+    text-shadow: 2px 2px 1px #1c1c1c;
     cursor: default;
+    margin-bottom: 25px;
 }
 
+h3:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+canvas {
+  border: 10px solid rgba(255, 165, 0, 0.5);
+  border-radius: 20px;
+}
 
 h4 {
-    font-family: 'Bevan', cursive;
+  font-family: 'Architects Daughter', cursive;
     letter-spacing: 3px;
     font-size: 16px;
-    background: #F7FF14;
-    background: -webkit-radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
-    background: radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: yellow;
+    text-shadow: 2px 2px 1px #1c1c1c;
     cursor: default;
+    max-width: 680px;
+    margin: 15px auto 10px;
+}
+
+h4:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }
 
 footer p {
@@ -67,13 +80,15 @@ footer p {
     cursor: default;
     font-family: "Gloria Hallelujah", cursive;
     letter-spacing: 3px;
-    margin: 30px 0 5px 0;
+    margin: 30px auto 5px;
     color: #f7f7f7;
+    max-width: 300px;
+    width: 100%;
   }
   
   footer p:hover {
     color: lime;
-    transform: scale(1.01);
+    transform: scale(1.1);
     transition-duration: 0.5s;
   }
 

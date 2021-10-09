@@ -1,7 +1,7 @@
 screen = document.querySelector("canvas");
 brush = screen.getContext("2d");
 
-brush.fillStyle = "white";
+brush.fillStyle = "transparent";
 brush.fillRect(0, 0, 600, 400);
 
 function drawSquare(x, y, size, color) {
