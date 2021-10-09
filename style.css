@@ -26,14 +26,18 @@ h1 {
     margin-bottom: 0;
 }
 
+h1:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
 h3 {
     line-height: 2;
     margin-left: 28%;
     margin-right: 28%;
-    text-align: justify;
     font-family: 'Bevan', cursive;
     letter-spacing: 3px;
-    font-size: 18px;
+    font-size: 22px;
     background: #F7FF14;
     background: -webkit-radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
     background: -moz-radial-gradient(circle farthest-corner at center center, #F7FF14 0%, #21FF19 100%);
@@ -42,6 +46,7 @@ h3 {
     -webkit-text-fill-color: transparent;
     cursor: default;
 }
+
 
 h4 {
     font-family: 'Bevan', cursive;
